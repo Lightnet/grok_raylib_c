@@ -9,6 +9,9 @@
 # target:
  * raylib 5.5
 
+# features:
+ * hot reload
+
 # Information:
  Using the Grok Beta 3 to build cmake and raylib.
 

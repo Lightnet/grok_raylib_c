@@ -17,6 +17,10 @@
 
  Did learn few things how A.I help improve how to build game.dll file correctly. Reason it depend on explain help how to compile a bit better.
 
+ By Using CMake to build quick but required tool chain or compiler to use CMake helper.
+
+ Trying to work on hot reload build. Note there different way to hot reload. But need proper way and clean way to reload from how files are set up.
+
 # build:
 
 ```
@@ -46,6 +50,11 @@ Press R key to reload game.dll. It will reopen window.
 # Notes:
  * It took time to go back to basic as raygui not added.
  * solve how to reload game.dll as there few different way to reload.
+ * window.h and raylib.h has conflict name matches for CloseWindow/
+``` 
+#define NOUSER //disable for CloseWindow
+```
+  * note it has be been in order to disable from the file.
 
 ```
 cmake .. -G "MinGW Makefiles"
